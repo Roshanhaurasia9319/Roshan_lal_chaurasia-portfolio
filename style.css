@@ -1,0 +1,536 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .header{
+    border: 2px solid black;
+    width: 34px;
+    height: 35px;
+} */
+
+body{
+    background-color: rgb(6, 1, 20);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+    width: 90vw;
+    position: relative;
+    z-index: 10;
+    margin: auto;
+
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;   
+    font-weight: bolder; 
+    color: blueviolet;
+}
+
+nav ul li {
+    padding: 5px;
+    list-style: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    nav{
+        flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+
+
+
+}
+
+
+nav span button {
+    border-radius: 70%;
+    border-color: rgb(0, 136, 255);
+}
+
+
+nav span p {
+   max-width: 20vw;
+}
+
+
+button img {
+    border-radius: 50%;
+}
+
+.main {
+    background-image: url(img/background.jpg);
+    background-position: center center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+@media only screen and (max-width: 768px) {
+    .main {
+        margin: 0%;
+    }
+}
+
+.main .box {
+    background-color: black;
+    position: absolute;
+    background-size: cover;
+    top: 0%;
+    width: 100%;
+    height:90vh;
+    opacity: 0.69;
+}
+
+.line{
+    border: 2px solid rgba(128, 128, 128, 0.555);
+} 
+.container {
+    height: calc(100%-500px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    gap: 10px;
+    padding: 34px;
+
+}
+.container .b1{
+   max-width: 50vw;
+}
+
+.main .container .b1> :first-child {
+    font-size: 4rem;
+    color: lightgreen;
+}
+
+.main .container .b1> :nth-child(2) {
+    font-size: 1rem;
+    color: lightseagreen;
+    height: calc(100%-100px);
+}
+
+/* .main .container .b2 {
+    font-size: 1.5rem;
+    color: lightgreen;
+    display: flex;
+    flex-direction: column;
+} */
+
+.main .para {
+    color: lightblue;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 100px;/* Adjust top position according to your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-decoration: unset;
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .main .para p{
+        font-size: large;
+        margin: 61px -52px;
+        text-decoration: underline;
+        position: absolute;
+        top: 73px;
+    }
+
+.container{
+  text-align: center;
+  max-width: 100vw;
+}
+
+.container .b1{
+    /* max-width: unset; */
+}
+.main .container .b1> :first-child {
+    font-size: x-large; 
+    justify-content: flex-start;
+}    
+
+.main .container .b1> :nth-child(2) {
+    font-size: 11px; 
+}   
+
+/* .main .container .b2{
+    
+    font-size: medium;
+    justify-content: center;
+}    */
+
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boxes .box1 {
+
+    background: url("img/p1.jpg");
+    background-repeat: no-repeat;
+    background-size: 22vw 42vh;
+    background-position: center;
+    height: 40vh;
+    width: 20vw;
+    position: relative;
+    bottom: 60px;
+    padding: 5px;
+    box-shadow: 4px 4px 8px 3px black;
+}
+
+.boxes .box1:hover {
+    box-shadow: 0px 0px 10px 5px;
+}
+
+
+.boxes .box2 {
+    border: 2px solid rgb(216, 182, 182);
+    background: url("img/p2.png");
+    background-repeat: no-repeat;
+    background-size: 22vw 42vh;
+    background-position: center;
+    height: 40vh;
+    width: 20vw;
+    position: relative;
+    bottom: 60px;
+    padding: 5px;
+    box-shadow: 4px 4px 8px 3px black;
+}
+.boxes .box2:hover {
+    box-shadow: 0px 0px 10px 5px;
+}
+
+.boxes .box3 {
+
+    background: url("img/p3.jpg");
+    background-repeat: no-repeat;
+    background-size: 22vw 49vh;
+    background-position: center;
+    height: 40vh;
+    width: 20vw;
+    position: relative;
+    bottom: 60px;
+    padding: 5px;
+    /* box-shadow: 2px 0px 2px 0px rgb(217 217 45); */
+    box-shadow: 4px 4px 8px 3px black;
+}
+.boxes .box3:hover {
+    box-shadow: 0px 0px 10px 5px;
+}
+
+.boxes .box4 {
+
+    background: url("img/Netflix.jpg");
+    background-repeat: no-repeat;
+    background-size: 22vw 49vh;
+    background-position: center;
+    height: 40vh;
+    width: 20vw;
+    position: relative;
+    bottom: 60px;
+    padding: 5px;
+    box-shadow: 4px 4px 8px 3px black;
+}
+.boxes .box4:hover {
+    box-shadow: 0px 0px 10px 5px;
+}
+
+    
+@media only screen and (max-width: 768px) {
+
+    .boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes .box1 {
+        background-size: 97vw 42vh;
+        background-position: center;
+        top: 80px;
+        height: 40vh;
+        width: 93vw;
+    }
+    .boxes .box2 {
+        background-size: 97vw 42vh;
+        background-position: center;
+        top: 80px;
+        height: 40vh;
+        width: 93vw;
+    }
+    .boxes .box3 {
+        background-size: 97vw 42vh;
+        background-position: center;
+        top: 80px;
+        height: 40vh;
+        width: 93vw;
+    }
+    .boxes .box4 {
+        background-size: 97vw 42vh;
+        background-position: center center;
+        top: 80px;
+        height: 40vh;
+        width: 93vw;
+    }
+
+}
+
+
+
+.para-lang {
+    color: lightblue;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    position: relative;
+    max-width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px;
+    }
+
+    
+@media only screen and (max-width: 768px) {
+
+    .para-lang{
+        font-size: larger;
+        margin: 109px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+
+}
+
+    .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .s{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+
+    }
+
+    .s .s1{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/c++.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .s .s2{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/python.jpg");
+        background-repeat: no-repeat;
+        background-size: 10vw 20vh;
+        background-position: center;
+    }
+
+    .s .s3{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/html.avif");
+        background-repeat: no-repeat;
+        background-size: 20vw 25vh;
+        background-position: center;
+    }
+
+    
+    .s .s4{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/css.png");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 10vw 15vh;
+        background-position: center;
+    }
+
+    .s .s5{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/js.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .s .s6{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/node.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .s .s7{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/django.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .s .s8{
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-image: url("img/bootstrap.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+
+        
+        .skills{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            flex-wrap: wrap;
+    
+        }
+        .s{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-bottom: 0px;
+            gap: 20px;
+    
+        }
+
+        .s .s1{
+            margin: 0;
+            padding: 0;
+            height: 10vh;
+            width: 20vw;
+            border-radius: 50%;
+        }
+    
+        .s .s2{
+            height: 10vh;
+            width: 20vw;    
+            background-size: 20vw 12vh;
+            background-position: center center;    
+        }
+    
+        .s .s3{
+            border: 2px solid black;
+            height: 10vh;
+            width: 20vw;
+            background-position: center center;
+            background-size: 48vw 13vh;
+          
+        }
+    
+        
+        .s .s4{
+            height: 10vh;
+            width: 20vw;
+            background-size: 20vw 8vh;
+            background-position: center center;
+        }
+    
+        .s .s5{
+            height: 10vh;
+            width: 20vw;    
+            background-size: 20vw 12vh;
+            background-position: center center;  
+        }
+        .s .s6{
+            height: 10vh;
+            width: 20vw;    
+            background-size: 20vw 12vh;
+            background-position: center center;  
+        }
+    
+        .s .s7{
+            height: 10vh;
+            width: 20vw;    
+            background-size: 20vw 12vh;
+            background-position: center center;  
+        }
+        .s .s8{
+            height: 10vh;
+            width: 20vw;    
+            background-size: 20vw 12vh;
+            background-position: center center;  
+        }
+    }
+
+footer{
+    color:white;
+    border: 2px solid black ;
+    background-color: rgba(128, 128, 128, 0.356);
+    height: 30vh;
+}
+footer .foot{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+   top: 50px;
+
+
+}
+
+    @media only screen and (max-width: 768px){
+    footer .foot{
+    font-size: smaller;
+    }
+ }
